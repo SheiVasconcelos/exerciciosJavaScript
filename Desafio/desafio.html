@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+    <body>
+      <div class="div_master">
+        <div class="div_esq">
+          <textarea class="escreva" id="palavra" placeholder="Digite seu texto"></textarea>
+          <div class="div_esq_footer">
+            <p>Aviso</p>
+            <ul class="lista_botoes">
+              <li><button class="botao_crip" onclick="criptografar()"> Criptografar </button></li>
+              <li><button class="botao_descrip" onclick="descriptografar()"> Descriptografar </button></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="div_dir">
+          <p class="saida" id="saida">Saida</p>
+          <button class="botao_copiar" onclick="copiarTexto()"> Copiar </button>
+        </div>
+
+        <script src="script.js"></script>
+      </div>
+    </body>
+
+
+  </html>
