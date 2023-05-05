@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+    <body>
+      <img src="Vector.png" class="logo">
+
+      <div class="div_main">
+        <p class="titulo">Decodificador</p>
+        <div class="div_esq">
+          <textarea class="escreva" id="palavra" placeholder="Digite seu texto"></textarea>
+          <div class="div_esq_footer">
+            <p class="aviso"><img src="Vector2.png" class="inline_imagem">Atenção: Não devem ser utilizados letras com acentos nem caracteres especiais.</p>
+
+            <nav>
+              <ul class="lista_botoes">
+                <li><button class="botao_crip" onclick="criptografar()"> Criptografar </button></li>
+                <li><button class="botao_descrip" onclick="descriptografar()"> Descriptografar </button></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="div_dir"> 
+          <textarea readonly class="saida" id="saida"> </textarea>
+          <button class="botao_copiar" onclick="copiarTexto()"> Copiar </button>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p class="copyright">2023 Copyright. Aspirantes do Front-End. One turma 5</p>
+      </footer>
+
+      <script src="script.js"></script>
+    </body>
+
+
+  </html>
