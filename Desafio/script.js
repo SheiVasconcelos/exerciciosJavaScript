@@ -1,10 +1,6 @@
-/*
-var a = "ai"
-var e = "enter"
-var i = "imes"
-var o = "obes"
-var u = "ufat"
-*/
+function removerImagem () {
+	document.getElementById("saida").style.backgroundImage = "none";
+}
 
 function criptografar () {
 	var input = document.getElementById("palavra").value;
@@ -19,6 +15,7 @@ function criptografar () {
 	}
 	
 	var output = lista.join("");
+	removerImagem();
 	document.getElementById("saida").innerHTML= output;
 }
 
@@ -32,6 +29,7 @@ function descriptografar () {
 	output = output.replaceAll ("imes", "i");
 	output = output.replaceAll ("enter","e");
 	
+	removerImagem();
 	document.getElementById("saida").innerHTML= output;
 	
 }
